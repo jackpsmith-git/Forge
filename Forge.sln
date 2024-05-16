@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForgeLib", "ForgeLib\ForgeLib.csproj", "{659D577E-7C03-44D0-816A-CD55CAF5E4E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForgeGUI", "ForgeGUI\ForgeGUI.csproj", "{409BB50E-4318-4CCB-AE11-29FFBE313FF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59DE14E2-7A29-4486-87F5-F62CDE38C283}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{659D577E-7C03-44D0-816A-CD55CAF5E4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659D577E-7C03-44D0-816A-CD55CAF5E4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659D577E-7C03-44D0-816A-CD55CAF5E4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659D577E-7C03-44D0-816A-CD55CAF5E4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409BB50E-4318-4CCB-AE11-29FFBE313FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409BB50E-4318-4CCB-AE11-29FFBE313FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409BB50E-4318-4CCB-AE11-29FFBE313FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409BB50E-4318-4CCB-AE11-29FFBE313FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC6AD68D-BF8D-44B4-ACE0-6D2D17A06BDC}
+	EndGlobalSection
+EndGlobal
