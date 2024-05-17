@@ -2,7 +2,7 @@
 
 # Forge Password Management Utility
 
-Forge is a free portable password management utility for Windows 10/11.
+Forge is a free and open source (FOSS) portable password management utility for Windows 10/11.
 <p>&nbsp;</p>
 
 ## Description
@@ -33,14 +33,8 @@ Forge is not responsible for any lost or exposed data. It is the end user's resp
 
 ### Dependencies
 
-* Forge is a self-contained application that includes the necessary .NET runtime and libraries.
-* Windows 10/11
-<p>&nbsp;</p>
-
-### Compiling From Source
-<p>&nbsp;</p>
-
-### Directory Structure
+* Windows 10/11 - Forge only works on Windows 10/11 operating systems as it relies on the Win32 API.
+* .NET 8.0 - Forge is dependent on the .NET 8.0 runtime which is the current LTS from Microsoft. You can download .NET 8.0 [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
 <p>&nbsp;</p>
 
 ### Creating a Vault
@@ -83,6 +77,9 @@ For questions, bug reports, feature suggestions, or general help, contact me at 
         * .md
         * .rtf
         * .pdf
+    * Right click menu
+    * Ability to manually edit key list without additional menu
+    * ForgeLib general improvements
 * 1.0.0
     * Initial Release
 <p>&nbsp;</p>
