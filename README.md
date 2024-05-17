@@ -31,6 +31,9 @@ Forge is not responsible for any lost or exposed data. It is the end user's resp
 
 ## Getting Started
 
+You can find the latest build of Forge (v.1.0.0) in the Forge_x64 directory in the repository. Additionally, you have the option to compile from source with Visual Studio 2022.
+<p>&nbsp;</p>
+
 ### Dependencies
 
 * Windows 10/11 - Forge only works on Windows 10/11 operating systems as it relies on the Win32 API.
