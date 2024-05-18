@@ -1,4 +1,4 @@
-![ForgeLogo](https://github.com/jackpsmith-git/ForgePasswordManagementUtility/assets/121800539/e8c817f1-9ebb-42b4-8a12-11ce5a7d22f7)
+![ForgeLogo](https://i0.wp.com/jackpsmith.com/wp-content/uploads/2024/05/ForgeLogo-2.png?w=1625&ssl=1)
 
 # Forge Password Management Utility
 
