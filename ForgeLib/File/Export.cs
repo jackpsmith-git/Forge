@@ -2,9 +2,14 @@
 
 namespace ForgeLib.File
 {
+    /// <summary>
+    /// Static class containing methods for exporting Forge Vault Objects
+    /// </summary>
     public static class Export
     {
-
+        /// <summary>
+        /// Available vault export formats
+        /// </summary>
         public enum ExportFormat
         {
             txt,
@@ -18,7 +23,6 @@ namespace ForgeLib.File
         /// </summary>
         /// <param name="vault">The vault to be exported.</param>
         /// <param name="format">The file format to export the vault data.</param>
-        /// <param name="startupPath">The startup path of the application.</param>
         /// <returns>void</returns>
         public static void ExportVault(Vault vault, ExportFormat format)
         {
@@ -39,6 +43,11 @@ namespace ForgeLib.File
             }
         }
 
+        /// <summary>
+        /// Exports vault data to .txt format.
+        /// </summary>
+        /// <param name="vault">Vault to export</param>
+        /// <returns>void</returns>
         private static void TXT(Vault vault)
         {
             string path = Directory.FormPath(Directory.EXPORTS, vault.id, ".txt");
@@ -56,6 +65,11 @@ namespace ForgeLib.File
             }
         }
 
+        /// <summary>
+        /// Exports vault data to .csv format.
+        /// </summary>
+        /// <param name="vault">Vault to export</param>
+        /// <returns>void</returns>
         private static void CSV(Vault vault)
         {
             string path = Directory.FormPath(Directory.EXPORTS, vault.id, ".csv");
@@ -74,6 +88,11 @@ namespace ForgeLib.File
             System.IO.File.WriteAllText(path, csvData);
         }
 
+        /// <summary>
+        /// Exports vault data to .json format.
+        /// </summary>
+        /// <param name="vault">Vault to export</param>
+        /// <returns>void</returns>
         private static void JSON(Vault vault)
         {
             string path = Directory.FormPath(Directory.EXPORTS, vault.id, ".json");
@@ -87,6 +106,11 @@ namespace ForgeLib.File
             System.IO.File.WriteAllText(path, jsonData);
         }
 
+        /// <summary>
+        /// Exports vault data to .xml format.
+        /// </summary>
+        /// <param name="vault">Vault to export</param>
+        /// <returns>void</returns>
         private static void XML(Vault vault)
         {
             string path = Directory.FormPath(Directory.EXPORTS, vault.id, ".xml");

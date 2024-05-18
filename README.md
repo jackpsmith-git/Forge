@@ -3,6 +3,8 @@
 # Forge Password Management Utility
 
 Forge is a free and open source (FOSS) portable password management utility for Windows 10/11.
+
+The current version of Forge is v.1.0.1 released on May 17, 2024.
 <p>&nbsp;</p>
 
 ## Description
@@ -31,7 +33,7 @@ Forge is not responsible for any lost or exposed data. It is the end user's resp
 
 ## Getting Started
 
-You can find the latest build of Forge (v.1.0.0) in the Forge_x64 directory in the repository. Additionally, you have the option to compile from source with Visual Studio 2022.
+You can find the latest build of Forge (v.1.0.1) in the Forge_x64 directory in the repository. Additionally, you have the option to compile from source with Visual Studio 2022.
 <p>&nbsp;</p>
 
 ### Dependencies
@@ -83,7 +85,10 @@ For questions, bug reports, feature suggestions, or general help, contact me at 
     * Right click menu
     * Ability to manually edit key list without additional menu
     * ForgeLib general improvements
-* 1.0.0
+* 1.0.1 - May 2024
+    * Fixed bug where Forge could not write decryption key and initialization vector to readonly files
+    * Improved documentation
+* 1.0.0 - May 2024
     * Initial Release
 <p>&nbsp;</p>
 

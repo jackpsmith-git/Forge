@@ -1,11 +1,11 @@
-﻿using System.Security.Cryptography;
-using System.Xml.Serialization;
-using ForgeLib.File;
+﻿using System.Xml.Serialization;
 using ForgeLib.Objects;
-using Newtonsoft.Json;
 
 namespace ForgeLib.Services
 {
+    /// <summary>
+    /// Static class containing Forge methods for serilizing and deserializing data
+    /// </summary>
     public static class Serialization
     {
         /// <summary>

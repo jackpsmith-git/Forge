@@ -1,5 +1,8 @@
 ﻿namespace ForgeLib.Messages
 {
+    /// <summary>
+    /// Static class containing Forge error messages
+    /// </summary>
     public static class Error
     {
         public const string ERROR = "Error!";

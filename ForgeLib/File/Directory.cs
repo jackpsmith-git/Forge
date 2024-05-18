@@ -1,5 +1,8 @@
 ﻿namespace ForgeLib.File
 {
+    /// <summary>
+    /// Static class containing Forge directory properties and methods
+    /// </summary>
     public static class Directory
     {
 
@@ -61,11 +64,6 @@
         {
             DirectoryInfo di = new(path);
             di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
-        }
-
-        public static void SetReadOnly(string path)
-        {
-            System.IO.File.SetAttributes(path, FileAttributes.ReadOnly);
         }
 
         /// <summary>

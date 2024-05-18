@@ -1,5 +1,8 @@
 ﻿namespace ForgeLib.Messages
 {
+    /// <summary>
+    /// Static class containing Forge success messages
+    /// </summary>
     public static class Success
     {
         public const string SUCCESS = "Success!";

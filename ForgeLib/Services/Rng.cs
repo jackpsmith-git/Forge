@@ -3,56 +3,75 @@ using System.Text;
 
 namespace ForgeLib.Services
 {
+    /// <summary>
+    /// Static class containing Forge methods for generating random data.
+    /// </summary>
     public static class Rng
     {
-        private static System.Security.Cryptography.RandomNumberGenerator rng = System.Security.Cryptography.RandomNumberGenerator.Create();
+        /// <summary>
+        /// Random Number Generator
+        /// </summary>
+        private static RandomNumberGenerator rng = RandomNumberGenerator.Create();
 
-        internal static string GenerateRandomString(int intStringLength)
+        private const string CAPITAL_LETTERS = "QWERTYUIOPASDFGHJKLZXCVBNM";
+        private const string LOWERCASE_LETTERS = "qwertyuiopasdfghljkzxcvbnm";
+        private const string DIGITS = "0123456789";
+
+        /// <summary>
+        /// Generates a random string containing all capital and lowercase letters, as well as several special characters.
+        /// </summary>
+        /// <param name="length">Length of the string to generate</param>
+        /// <returns>Random string</returns>
+        internal static string GenerateRandomString(int length)
         {
-            string strCapitalLetters = "QWERTYUIPASDFGHJKLZXCVBNM";
-            string strSmallLetters = "qwertyupasdfghjkzxcvbnm";
-            string strDigits = "123456789";
-            string strSpecialCharacters = "!@#$%^&*()-_=+<,>.";
-            string strAllChar = strCapitalLetters + strSmallLetters + strDigits + strSpecialCharacters;
+            string specialChars = "!@#$%^&*()-_=+<,>.";
+            string chars = CAPITAL_LETTERS + LOWERCASE_LETTERS + DIGITS + specialChars;
 
-            StringBuilder sbStringBuilder = new StringBuilder();
-            for (int i = 0; i < intStringLength; i++)
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < length; i++)
             {
-                sbStringBuilder = sbStringBuilder.Append(GenerateChar(strAllChar));
+                sb = sb.Append(GenerateChar(chars));
             }
 
-            return sbStringBuilder.ToString();
+            return sb.ToString();
         }
 
-        public static string GenerateRandomSafeString(int intStringLength)
+        /// <summary>
+        /// Generates a random string containing all capital and lowercase letters, as well as the hyphen and underscore characters.
+        /// </summary>
+        /// <param name="length">Length of the string to generate</param>
+        /// <returns>Random string</returns>
+        public static string GenerateRandomSafeString(int length)
         {
-            string strCapitalLetters = "QWERTYUIPASDFGHJKLZXCVBNM";
-            string strSmallLetters = "qwertyupasdfghjkzxcvbnm";
-            string strDigits = "123456789";
-            string strSpecialCharacters = "-_";
-            string strAllChar = strCapitalLetters + strSmallLetters + strDigits + strSpecialCharacters;
+            string specialChars = "-_";
+            string chars = CAPITAL_LETTERS + LOWERCASE_LETTERS + DIGITS + specialChars;
 
-            StringBuilder sbStringBuilder = new StringBuilder();
-            for (int i = 0; i < intStringLength; i++)
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < length; i++)
             {
-                sbStringBuilder = sbStringBuilder.Append(GenerateChar(strAllChar));
+                sb = sb.Append(GenerateChar(chars));
             }
 
-            return sbStringBuilder.ToString();
+            return sb.ToString();
         }
 
-        private static char GenerateChar(string strAvailableChars)
+        /// <summary>
+        /// Generates a random character.
+        /// </summary>
+        /// <param name="availableChars">Available characters to generate.</param>
+        /// <returns>Generated character</returns>
+        private static char GenerateChar(string availableChars)
         {
-            var varByteArray = new byte[1];
-            char chrCharacter;
+            var chars = new byte[1];
+            char character;
             do
             {
-                rng.GetBytes(varByteArray);
-                chrCharacter = (char)varByteArray[0];
+                rng.GetBytes(chars);
+                character = (char)chars[0];
 
-            } while (!strAvailableChars.Any(x => x == chrCharacter));
+            } while (!availableChars.Any(x => x == character));
 
-            return chrCharacter;
+            return character;
         }
 
     }

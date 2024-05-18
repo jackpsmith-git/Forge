@@ -7,6 +7,9 @@ using ForgeLib.Services;
 
 namespace ForgeGUI
 {
+    /// <summary>
+    /// Main GUI Form
+    /// </summary>
     public partial class GUI : Form
     {
         public GUI()
@@ -20,6 +23,12 @@ namespace ForgeGUI
         /// </summary>
         private bool editMode = false;
 
+        /// <summary>
+        /// Event fired when the GUI window is resized.
+        /// </summary>
+        /// <param name="sender">The object that fired the event</param>
+        /// <param name="e">Event arguments</param>
+        /// <returns>void</returns>
         private void GUI_Resize(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Minimized && App.activeVault != null)

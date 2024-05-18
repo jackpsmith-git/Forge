@@ -682,7 +682,7 @@
             statStripVersion.Name = "statStripVersion";
             statStripVersion.Size = new Size(533, 20);
             statStripVersion.Spring = true;
-            statStripVersion.Text = "Forge Password Management Utility v.1.0.0";
+            statStripVersion.Text = "Forge Password Management Utility v.1.0.1";
             statStripVersion.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // tsbReportBug
@@ -702,7 +702,7 @@
             // 
             tsbReportBugSub.Image = (Image)resources.GetObject("tsbReportBugSub.Image");
             tsbReportBugSub.Name = "tsbReportBugSub";
-            tsbReportBugSub.Size = new Size(180, 22);
+            tsbReportBugSub.Size = new Size(142, 22);
             tsbReportBugSub.Text = "Report a Bug";
             tsbReportBugSub.Click += reportBug_Click;
             // 

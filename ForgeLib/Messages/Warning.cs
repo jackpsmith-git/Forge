@@ -1,5 +1,8 @@
 ﻿namespace ForgeLib.Messages
 {
+    /// <summary>
+    /// Static class containing Forge warning messages
+    /// </summary>
     public static class Warning
     {
         public const string WARNING = "Warning!";

@@ -1,11 +1,25 @@
 ﻿namespace ForgeLib.Objects
 {
+    /// <summary>
+    /// Forge Vault Object
+    /// </summary>
     public class Vault
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Vault() { }
 
         public List<Key> keys = new();
+
+        /// <summary>
+        /// Vault ID
+        /// </summary>
         public string id = string.Empty;
+
+        /// <summary>
+        /// Hashed Vault Key
+        /// </summary>
         public string hash = string.Empty;
 
         /// <summary>

@@ -1,7 +1,13 @@
 ﻿namespace ForgeLib.Objects
 {
+    /// <summary>
+    /// Forge Key Object
+    /// </summary>
     public class Key
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Key() { }
 
         public string service = string.Empty;

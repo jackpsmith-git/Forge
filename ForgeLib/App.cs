@@ -1,9 +1,11 @@
 ﻿using ForgeLib.Objects;
 using ForgeLib.Services;
 using System.Diagnostics;
-
 namespace ForgeLib
 {
+    /// <summary>
+    /// Static class containing methods used by the Forge application
+    /// </summary>
     public static class App
     {
         /// <summary>
@@ -16,6 +18,9 @@ namespace ForgeLib
         /// </summary>
         public readonly static string GUID = "FVM_dmF1bHRz";
 
+        /// <summary>
+        /// Initializes processes necessary for the app to run.
+        /// </summary>
         public static void Initialize()
         {
             File.Directory.InitializeAll();
