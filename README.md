@@ -94,4 +94,4 @@ For questions, bug reports, feature suggestions, or general help, contact me at 
 
 ## License
 
-Forge is licensed under the MIT License - see the LICENSE.txt file for details
+Forge is licensed under the MIT License - see the LICENSE.txt file for details.
