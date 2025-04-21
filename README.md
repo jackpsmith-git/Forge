@@ -66,25 +66,6 @@ For questions, bug reports, feature suggestions, or general help, contact me at 
 
 ## Version History
 
-* 2.0.0 (COMING SOON) 
-    * Command line interface
-    * Additional export formats
-    * Resizable GUI
-    * Dark mode
-    * Accessibility updates
-    * Copy to clipboard
-    * Dropdown for common services
-    * Export to
-        * .xlsx
-        * .docx
-        * .ods
-        * .tsv
-        * .md
-        * .rtf
-        * .pdf
-    * Right click menu
-    * Ability to manually edit key list without additional menu
-    * ForgeLib general improvements
 * 1.0.1 - May 2024
     * Fixed bug where Forge could not write decryption key and initialization vector to readonly files
     * Improved documentation
